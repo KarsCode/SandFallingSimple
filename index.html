@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Sand Simulation</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Full viewport height */
+        background-color: #ffffff; /* Match canvas background if needed */
+    }
+
+    canvas {
+        display: block;
+        width: 90vw; /* 90% of the viewport width */
+        height: auto; /* Maintain aspect ratio */
+        border: 2px solid #000; /* Add a border for visibility */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a nice appearance */
+        border-radius: 8px; /* Rounded corners */
+    }
+
+    @media (max-width: 768px) {
+        canvas {
+            width: 80vw; /* Adjust width for smaller screens */
+            height: auto; /* Maintain aspect ratio */
+        }
+    }
+
+    @media (max-width: 480px) {
+        canvas {
+            width: 95vw; /* Almost full width for very small screens */
+            height: auto; /* Maintain aspect ratio */
+        }
+    }
+</style>
+<body>
+    <h1>Falling Sand Simulator</h1>
+    <!-- p5.js will automatically create a canvas -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
